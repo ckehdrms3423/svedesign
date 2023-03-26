@@ -36,7 +36,7 @@ router.get("/test",(req,res,next)=>{
 
 router.get('/kafka', (req, res, next) => {
   const Consumer = kafka.Consumer;
-  const client = new kafka.KafkaClient({ kafkaHost: '114.70.21.91:9092' });
+  const client = new kafka.KafkaClient({ kafkaHost: 'address' });
 
   const consumer = new Consumer(
     client,
